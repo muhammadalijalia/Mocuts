@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MoCuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="58"/>
+        </scene>
+        <!--Animated Launch ScreenVC-->
+        <scene sceneID="fr3-zE-wkg">
+            <objects>
+                <viewController storyboardIdentifier="AnimatedLaunchScreenVC" id="C7x-ru-g9d" customClass="AnimatedLaunchScreenVC" customModule="MoCuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Enf-ua-de4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlS-BW-qZL">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashLogo5" translatesAutoresizingMaskIntoConstraints="NO" id="FuJ-we-0Ux">
+                                        <rect key="frame" x="0.0" y="0.0" width="415" height="897"/>
+                                    </imageView>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="ZCs-qU-l5t" customClass="LottieAnimationView" customModule="Lottie">
+                                        <rect key="frame" x="62" y="404.5" width="290" height="101"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ZCs-qU-l5t" secondAttribute="height" multiplier="3606:1256" id="B1m-Gs-qfc"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="mocuts_lottie"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="PrA-YZ-f6D"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="PrA-YZ-f6D" firstAttribute="trailing" secondItem="FuJ-we-0Ux" secondAttribute="trailing" constant="-1" id="0CP-NI-pdN"/>
+                                    <constraint firstItem="ZCs-qU-l5t" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PrA-YZ-f6D" secondAttribute="leading" id="3Lh-py-Myd"/>
+                                    <constraint firstAttribute="bottom" secondItem="FuJ-we-0Ux" secondAttribute="bottom" constant="-1" id="DbH-8z-knE"/>
+                                    <constraint firstItem="ZCs-qU-l5t" firstAttribute="width" secondItem="hlS-BW-qZL" secondAttribute="width" multiplier="0.7" id="FrP-Y0-t7D"/>
+                                    <constraint firstItem="FuJ-we-0Ux" firstAttribute="leading" secondItem="PrA-YZ-f6D" secondAttribute="leading" id="OKq-V6-BZX"/>
+                                    <constraint firstItem="ZCs-qU-l5t" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PrA-YZ-f6D" secondAttribute="top" id="Rn1-OX-OBP"/>
+                                    <constraint firstItem="PrA-YZ-f6D" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZCs-qU-l5t" secondAttribute="bottom" id="Zk9-5z-Vi3"/>
+                                    <constraint firstItem="ZCs-qU-l5t" firstAttribute="centerX" secondItem="PrA-YZ-f6D" secondAttribute="centerX" id="byJ-CS-gRC"/>
+                                    <constraint firstItem="ZCs-qU-l5t" firstAttribute="centerY" secondItem="PrA-YZ-f6D" secondAttribute="centerY" id="dLK-bl-wl0"/>
+                                    <constraint firstItem="FuJ-we-0Ux" firstAttribute="top" secondItem="hlS-BW-qZL" secondAttribute="top" id="fAX-P2-heQ"/>
+                                    <constraint firstItem="PrA-YZ-f6D" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZCs-qU-l5t" secondAttribute="trailing" id="uss-Km-58A"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fsn-Bg-iKz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hlS-BW-qZL" firstAttribute="leading" secondItem="Fsn-Bg-iKz" secondAttribute="leading" id="779-5P-ZD5"/>
+                            <constraint firstItem="Fsn-Bg-iKz" firstAttribute="trailing" secondItem="hlS-BW-qZL" secondAttribute="trailing" id="90O-xy-YGb"/>
+                            <constraint firstItem="hlS-BW-qZL" firstAttribute="top" secondItem="Enf-ua-de4" secondAttribute="top" id="fki-rA-W0z"/>
+                            <constraint firstItem="hlS-BW-qZL" firstAttribute="bottom" secondItem="Enf-ua-de4" secondAttribute="bottom" id="shQ-fG-hlU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mocuts" destination="ZCs-qU-l5t" id="V2j-Be-Ae5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ig4-VN-sDo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="58"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashLogo5" width="375.5" height="812.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

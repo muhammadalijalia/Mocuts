@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPGenericTextView" customModule="PetPlanner" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLine" destination="39l-OX-ibP" id="7xG-HC-9Yp"/>
+                <outlet property="lblName" destination="RH6-78-Xlh" id="hA0-u8-AcS"/>
+                <outlet property="txtView" destination="AIr-No-as1" id="3un-8c-ifX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" contentMode="scaleToFill" id="If6-ow-duH">
+            <rect key="frame" x="0.0" y="0.0" width="422" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gt9-3J-w64">
+                    <rect key="frame" x="0.0" y="0.0" width="422" height="73"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH6-78-Xlh">
+                            <rect key="frame" x="0.0" y="0.0" width="422" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="ho9-vm-592"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIr-No-as1">
+                            <rect key="frame" x="0.0" y="30" width="402" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="1de-Wn-asy"/>
+                            </constraints>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="39l-OX-ibP">
+                            <rect key="frame" x="0.0" y="65" width="402" height="0.5"/>
+                            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.40000000000000002" id="dFE-YU-CTA"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="RH6-78-Xlh" firstAttribute="leading" secondItem="Gt9-3J-w64" secondAttribute="leading" id="1Ji-Sj-Fxu"/>
+                        <constraint firstItem="39l-OX-ibP" firstAttribute="trailing" secondItem="AIr-No-as1" secondAttribute="trailing" id="20B-ii-bPN"/>
+                        <constraint firstItem="39l-OX-ibP" firstAttribute="leading" secondItem="AIr-No-as1" secondAttribute="leading" id="29k-hS-s4e"/>
+                        <constraint firstItem="AIr-No-as1" firstAttribute="leading" secondItem="RH6-78-Xlh" secondAttribute="leading" id="5Z0-eF-cVb"/>
+                        <constraint firstItem="AIr-No-as1" firstAttribute="top" secondItem="RH6-78-Xlh" secondAttribute="bottom" constant="10" id="G77-EP-gyf"/>
+                        <constraint firstAttribute="trailing" secondItem="RH6-78-Xlh" secondAttribute="trailing" id="X7O-bf-Vwh"/>
+                        <constraint firstItem="RH6-78-Xlh" firstAttribute="top" secondItem="Gt9-3J-w64" secondAttribute="top" id="eyN-Jg-opo"/>
+                        <constraint firstItem="39l-OX-ibP" firstAttribute="top" secondItem="AIr-No-as1" secondAttribute="bottom" constant="5" id="fu1-6W-ZPW"/>
+                        <constraint firstAttribute="trailing" secondItem="AIr-No-as1" secondAttribute="trailing" constant="20" id="xsa-8i-KKS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Gt9-3J-w64" firstAttribute="leading" secondItem="gpD-gS-ebX" secondAttribute="leading" id="Bi2-er-gil"/>
+                <constraint firstItem="Gt9-3J-w64" firstAttribute="top" secondItem="If6-ow-duH" secondAttribute="top" id="Buy-8e-omx"/>
+                <constraint firstAttribute="bottom" secondItem="Gt9-3J-w64" secondAttribute="bottom" id="n2O-jO-2EB"/>
+                <constraint firstItem="Gt9-3J-w64" firstAttribute="trailing" secondItem="gpD-gS-ebX" secondAttribute="trailing" id="rXE-j3-1Ko"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="gpD-gS-ebX"/>
+            <point key="canvasLocation" x="76.811594202898561" y="-17.745535714285712"/>
+        </view>
+    </objects>
+</document>

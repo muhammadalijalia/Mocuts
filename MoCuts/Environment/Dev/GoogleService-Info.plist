@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1085995696151-9k737nha3i4ihlvrcsoi7mrk3lh31smn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1085995696151-9k737nha3i4ihlvrcsoi7mrk3lh31smn</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1085995696151-a5s71d6j2mc01laqscof3vf5h9680h4l.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDobEgzn5AgL8qL3JEguIHfgexxxtqzSn0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1085995696151</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.mocuts</string>
+	<key>PROJECT_ID</key>
+	<string>mocuts-1d747</string>
+	<key>STORAGE_BUCKET</key>
+	<string>mocuts-1d747.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<true/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1085995696151:ios:bcedc9c3ecd2426a2e1c52</string>
+	<key>DATABASE_URL</key>
+	<string>https://mocuts-1d747-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

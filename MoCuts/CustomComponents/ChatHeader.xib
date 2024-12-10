@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Medium.ttf">
+            <string>Jost-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChatHeader" customModule="MoCuts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="114" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ndp-1g-jsG" userLabel="Header">
+                    <rect key="frame" x="0.0" y="0.0" width="114" height="40"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zlL-j1-WF6">
+                            <rect key="frame" x="5" y="0.0" width="109" height="40"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xSF-1v-NYS">
+                                    <rect key="frame" x="0.0" y="0.0" width="52" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" name="Jost-Medium" family="Jost" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dP6-t1-mP2">
+                                    <rect key="frame" x="57" y="0.0" width="52" height="40"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <string key="text">Arriving
+Soon</string>
+                                    <fontDescription key="fontDescription" name="Jost-Medium" family="Jost" pointSize="10"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WJN-Ca-Hro">
+                            <rect key="frame" x="0.0" y="0.0" width="114" height="40"/>
+                            <connections>
+                                <action selector="itemTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="2NJ-nr-YB8"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WJN-Ca-Hro" firstAttribute="leading" secondItem="Ndp-1g-jsG" secondAttribute="leading" id="Brj-oQ-kb1"/>
+                        <constraint firstAttribute="trailing" secondItem="WJN-Ca-Hro" secondAttribute="trailing" id="BvP-Ph-Ruk"/>
+                        <constraint firstAttribute="height" constant="40" id="W0o-iq-rS1"/>
+                        <constraint firstItem="zlL-j1-WF6" firstAttribute="top" secondItem="Ndp-1g-jsG" secondAttribute="top" id="Yyg-Ie-ra5"/>
+                        <constraint firstItem="zlL-j1-WF6" firstAttribute="leading" secondItem="Ndp-1g-jsG" secondAttribute="leading" constant="5" id="Z3Z-eg-qxf"/>
+                        <constraint firstItem="WJN-Ca-Hro" firstAttribute="top" secondItem="Ndp-1g-jsG" secondAttribute="top" id="b58-t9-lIg"/>
+                        <constraint firstAttribute="trailing" secondItem="zlL-j1-WF6" secondAttribute="trailing" id="dyJ-vc-XDK"/>
+                        <constraint firstAttribute="bottom" secondItem="zlL-j1-WF6" secondAttribute="bottom" id="lsr-Gl-Q2g"/>
+                        <constraint firstAttribute="bottom" secondItem="WJN-Ca-Hro" secondAttribute="bottom" id="mtz-Tk-mIF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Ndp-1g-jsG" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="B49-YL-ikL"/>
+                <constraint firstItem="Ndp-1g-jsG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bpF-hP-qfa"/>
+                <constraint firstItem="Ndp-1g-jsG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eHc-IS-MPf"/>
+                <constraint firstItem="Ndp-1g-jsG" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="iny-dc-Baj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="timeLabel" destination="xSF-1v-NYS" id="KV9-mu-mr9"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="114.50892857142857"/>
+        </view>
+    </objects>
+</document>

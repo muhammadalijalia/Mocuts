@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="BarberProfileTotalServiceCell" customModule="MoCuts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5U0-Qx-Y2i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Services Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0E-Ah-1Di">
+                                <rect key="frame" x="20" y="9" width="150" height="26.5"/>
+                                <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="18"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.12549019607843137" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="(50 mins)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWC-J3-KvK">
+                                <rect key="frame" x="175" y="10.5" width="125" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="16"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.12549019607843137" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k0E-Ah-1Di" firstAttribute="leading" secondItem="5U0-Qx-Y2i" secondAttribute="leading" constant="20" id="DHK-WF-VwK"/>
+                            <constraint firstItem="k0E-Ah-1Di" firstAttribute="centerY" secondItem="5U0-Qx-Y2i" secondAttribute="centerY" id="Jk3-AY-eVI"/>
+                            <constraint firstItem="fWC-J3-KvK" firstAttribute="leading" secondItem="k0E-Ah-1Di" secondAttribute="trailing" constant="5" id="hEd-Wv-9GR"/>
+                            <constraint firstAttribute="trailing" secondItem="fWC-J3-KvK" secondAttribute="trailing" constant="20" id="nhs-8D-L4F"/>
+                            <constraint firstItem="fWC-J3-KvK" firstAttribute="centerY" secondItem="k0E-Ah-1Di" secondAttribute="centerY" id="xzO-ST-PAd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="5U0-Qx-Y2i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dky-EK-PbJ"/>
+                    <constraint firstAttribute="trailing" secondItem="5U0-Qx-Y2i" secondAttribute="trailing" id="eq4-qj-PZu"/>
+                    <constraint firstAttribute="bottom" secondItem="5U0-Qx-Y2i" secondAttribute="bottom" id="jqN-Cl-nBs"/>
+                    <constraint firstItem="5U0-Qx-Y2i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="oIn-X2-uwM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="serviceCount" destination="k0E-Ah-1Di" id="HGv-Qm-VyM"/>
+                <outlet property="totalTime" destination="fWC-J3-KvK" id="8O5-Fa-zDZ"/>
+            </connections>
+            <point key="canvasLocation" x="35" y="53"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="NoDataTableViewBackground" customModule="MoCuts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="262"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lp9-ov-RUP">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="262"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fR-qO-dOv">
+                            <rect key="frame" x="128.5" y="20" width="157.5" height="49"/>
+                            <string key="text">Oops!
+No today's services found!</string>
+                            <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="about" translatesAutoresizingMaskIntoConstraints="NO" id="Mf5-eV-8OW">
+                            <rect key="frame" x="147" y="104" width="120" height="128"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="D0U-Gr-Lbh"/>
+                                <constraint firstAttribute="height" constant="128" id="VxF-EW-SWJ"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2fR-qO-dOv" firstAttribute="centerX" secondItem="Lp9-ov-RUP" secondAttribute="centerX" id="LXd-3Z-G5v"/>
+                        <constraint firstItem="2fR-qO-dOv" firstAttribute="top" secondItem="Lp9-ov-RUP" secondAttribute="top" constant="20" id="Lbf-9J-NZy"/>
+                        <constraint firstAttribute="bottom" secondItem="Mf5-eV-8OW" secondAttribute="bottom" constant="30" id="N5E-Kl-2gn"/>
+                        <constraint firstAttribute="height" constant="262" id="V6b-Gx-DB7"/>
+                        <constraint firstItem="Mf5-eV-8OW" firstAttribute="centerX" secondItem="Lp9-ov-RUP" secondAttribute="centerX" id="i25-4p-l1c"/>
+                        <constraint firstItem="Mf5-eV-8OW" firstAttribute="top" secondItem="2fR-qO-dOv" secondAttribute="bottom" constant="35" id="ktz-ud-bRT"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Lp9-ov-RUP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6iY-H7-wu1"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lp9-ov-RUP" secondAttribute="bottom" id="f2K-fZ-xcw"/>
+                <constraint firstItem="Lp9-ov-RUP" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="mMS-MQ-I7O"/>
+                <constraint firstItem="Lp9-ov-RUP" firstAttribute="top" relation="greaterThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="top" id="u7a-GI-ui5"/>
+                <constraint firstItem="Lp9-ov-RUP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="v6f-Dc-mCS"/>
+                <constraint firstItem="Lp9-ov-RUP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="wDH-3L-fiY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="noDataImageView" destination="Mf5-eV-8OW" id="8LR-Ep-fFC"/>
+                <outlet property="noDataLabel" destination="2fR-qO-dOv" id="N6N-xf-8Ks"/>
+            </connections>
+            <point key="canvasLocation" x="-25" y="129"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="about" width="339" height="379.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

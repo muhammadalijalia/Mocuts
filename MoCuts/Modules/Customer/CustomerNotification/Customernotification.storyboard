@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Customer Notification View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CustomerNotificationView" id="Y6W-OH-hqX" customClass="CustomerNotificationView" customModule="MoCuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROy-Uc-Twn">
+                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fG0-pt-NsX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="separatorColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fG0-pt-NsX" firstAttribute="leading" secondItem="ROy-Uc-Twn" secondAttribute="leading" id="9bi-Kq-YdJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="fG0-pt-NsX" secondAttribute="bottom" id="F5K-ZW-cMR"/>
+                                    <constraint firstItem="fG0-pt-NsX" firstAttribute="top" secondItem="ROy-Uc-Twn" secondAttribute="top" id="QQJ-jv-7hi"/>
+                                    <constraint firstAttribute="trailing" secondItem="fG0-pt-NsX" secondAttribute="trailing" id="a90-Bd-abg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ROy-Uc-Twn" secondAttribute="trailing" id="AW7-XJ-3Cr"/>
+                            <constraint firstItem="ROy-Uc-Twn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="HWi-T6-aWB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ROy-Uc-Twn" secondAttribute="bottom" id="ehG-mg-9uH"/>
+                            <constraint firstItem="ROy-Uc-Twn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="thC-On-eaU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fG0-pt-NsX" id="Qs7-sH-spB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="58"/>
+        </scene>
+        <!--Notification Ratings Review View-->
+        <scene sceneID="WbT-TH-pSb">
+            <objects>
+                <viewController storyboardIdentifier="NotificationRatingsReviewView" id="ca8-8f-Uga" customClass="NotificationRatingsReviewView" customModule="MoCuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aMH-ff-JqD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IM9-iJ-m2J">
+                                <rect key="frame" x="0.0" y="78.5" width="414" height="783.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ca8-8f-Uga" id="iMn-Yu-jBK"/>
+                                    <outlet property="delegate" destination="ca8-8f-Uga" id="sd4-VA-eIf"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ratings and Reviews (0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5O-75-d83">
+                                <rect key="frame" x="5" y="53" width="141.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="14"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ENm-cr-iGG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ENm-cr-iGG" firstAttribute="trailing" secondItem="IM9-iJ-m2J" secondAttribute="trailing" id="39C-a3-gUQ"/>
+                            <constraint firstItem="IM9-iJ-m2J" firstAttribute="top" secondItem="x5O-75-d83" secondAttribute="bottom" constant="5" id="DvM-PM-geX"/>
+                            <constraint firstItem="x5O-75-d83" firstAttribute="top" secondItem="ENm-cr-iGG" secondAttribute="top" constant="5" id="Eeb-Kh-j5V"/>
+                            <constraint firstItem="x5O-75-d83" firstAttribute="leading" secondItem="ENm-cr-iGG" secondAttribute="leading" constant="5" id="aue-ro-Mw8"/>
+                            <constraint firstItem="ENm-cr-iGG" firstAttribute="bottom" secondItem="IM9-iJ-m2J" secondAttribute="bottom" id="dZ2-N9-Ups"/>
+                            <constraint firstItem="IM9-iJ-m2J" firstAttribute="leading" secondItem="ENm-cr-iGG" secondAttribute="leading" id="nmx-a6-o60"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="reviewText" destination="x5O-75-d83" id="A3n-iG-eFj"/>
+                        <outlet property="tableView" destination="IM9-iJ-m2J" id="ogX-91-7yq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tha-a8-eCw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.63768115942037" y="57.589285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

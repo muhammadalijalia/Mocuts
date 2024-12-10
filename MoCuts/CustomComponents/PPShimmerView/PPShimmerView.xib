@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPShimmerView" customModule="MoCuts" customModuleProvider="target">
+            <connections>
+                <outlet property="mainView" destination="vG2-vg-ygN" id="PUz-TO-TPg"/>
+                <outlet property="shimmerContentView" destination="anp-jM-B2d" id="PI5-ZD-KWE"/>
+                <outlet property="shimmerView" destination="LMd-JV-1C0" id="GTQ-Bb-bSK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="PPShimmerView" id="SpL-Yx-hXW" customClass="PPShimmerView" customModule="MoCuts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vG2-vg-ygN">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="anp-jM-B2d">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMd-JV-1C0" customClass="FBShimmeringView">
+                    <rect key="frame" x="0.0" y="0.0" width="64" height="44"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="LOx-aD-bvV"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vG2-vg-ygN" firstAttribute="top" secondItem="LOx-aD-bvV" secondAttribute="top" id="8HX-Y7-yfv"/>
+                <constraint firstAttribute="trailing" secondItem="anp-jM-B2d" secondAttribute="trailing" id="K2k-tA-AqI"/>
+                <constraint firstAttribute="trailing" secondItem="LMd-JV-1C0" secondAttribute="trailing" id="RNw-YM-7A6"/>
+                <constraint firstItem="vG2-vg-ygN" firstAttribute="bottom" secondItem="LOx-aD-bvV" secondAttribute="bottom" id="RVd-OE-VGz"/>
+                <constraint firstAttribute="bottom" secondItem="anp-jM-B2d" secondAttribute="bottom" id="X0o-my-r8b"/>
+                <constraint firstAttribute="bottom" secondItem="LMd-JV-1C0" secondAttribute="bottom" id="fqd-qc-hNt"/>
+                <constraint firstItem="vG2-vg-ygN" firstAttribute="trailing" secondItem="LOx-aD-bvV" secondAttribute="trailing" id="hTZ-sT-oqM"/>
+                <constraint firstItem="LMd-JV-1C0" firstAttribute="top" secondItem="SpL-Yx-hXW" secondAttribute="top" id="hqe-dS-tg1"/>
+                <constraint firstItem="LMd-JV-1C0" firstAttribute="leading" secondItem="SpL-Yx-hXW" secondAttribute="leading" id="mPz-5P-dHH"/>
+                <constraint firstItem="anp-jM-B2d" firstAttribute="top" secondItem="SpL-Yx-hXW" secondAttribute="top" id="o1G-kM-G8t"/>
+                <constraint firstItem="vG2-vg-ygN" firstAttribute="leading" secondItem="LOx-aD-bvV" secondAttribute="leading" id="vna-Lg-WLc"/>
+                <constraint firstItem="anp-jM-B2d" firstAttribute="leading" secondItem="SpL-Yx-hXW" secondAttribute="leading" id="zyk-Lx-axE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-350.39999999999998" y="-357.12143928035982"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

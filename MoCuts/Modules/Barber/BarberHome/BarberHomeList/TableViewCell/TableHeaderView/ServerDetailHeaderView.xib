@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DUr-O9-zpW" customClass="ServerDetailHeaderView" customModule="MoCuts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="72l-Xw-uOA">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 Services Selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj5-go-FLv">
+                            <rect key="frame" x="20" y="14" width="150" height="26.5"/>
+                            <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="18"/>
+                            <color key="textColor" red="0.12941176469999999" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="(50 mins)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxB-oL-fEI">
+                            <rect key="frame" x="175" y="15.5" width="219" height="23.5"/>
+                            <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="16"/>
+                            <color key="textColor" red="0.12941176469999999" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="hxB-oL-fEI" secondAttribute="trailing" constant="20" id="5SV-1G-rzG"/>
+                        <constraint firstItem="Bj5-go-FLv" firstAttribute="leading" secondItem="72l-Xw-uOA" secondAttribute="leading" constant="20" id="8ay-iX-Fzv"/>
+                        <constraint firstItem="hxB-oL-fEI" firstAttribute="leading" secondItem="Bj5-go-FLv" secondAttribute="trailing" constant="5" id="BXE-0U-ooh"/>
+                        <constraint firstItem="hxB-oL-fEI" firstAttribute="centerY" secondItem="Bj5-go-FLv" secondAttribute="centerY" id="WY4-ch-9DP"/>
+                        <constraint firstItem="Bj5-go-FLv" firstAttribute="centerY" secondItem="72l-Xw-uOA" secondAttribute="centerY" id="d5u-Tw-RtZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="jCU-Ld-nBL"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="jCU-Ld-nBL" firstAttribute="bottom" secondItem="72l-Xw-uOA" secondAttribute="bottom" id="ORI-mc-23A"/>
+                <constraint firstItem="jCU-Ld-nBL" firstAttribute="trailing" secondItem="72l-Xw-uOA" secondAttribute="trailing" id="Wed-ZU-rDR"/>
+                <constraint firstItem="72l-Xw-uOA" firstAttribute="top" secondItem="DUr-O9-zpW" secondAttribute="top" id="pEN-Mb-bAf"/>
+                <constraint firstItem="72l-Xw-uOA" firstAttribute="leading" secondItem="jCU-Ld-nBL" secondAttribute="leading" id="ta9-tC-W90"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="serviceCount" destination="Bj5-go-FLv" id="AhS-tD-dEK"/>
+                <outlet property="totalTime" destination="hxB-oL-fEI" id="Kxf-Bc-3kS"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="34.821428571428569"/>
+        </view>
+    </objects>
+</document>

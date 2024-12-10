@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Medium.ttf">
+            <string>Jost-Medium</string>
+        </array>
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ServiceHistoryCell" rowHeight="131" id="CsJ-T0-IIN" customClass="ServiceHistoryCell" customModule="MoCuts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CsJ-T0-IIN" id="n6u-uI-xp0">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="131"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fn-h5-XNw">
+                        <rect key="frame" x="20" y="10" width="280" height="111"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ShopImage" translatesAutoresizingMaskIntoConstraints="NO" id="7Ql-Tt-dbh">
+                                <rect key="frame" x="10" y="22" width="66.5" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7Ql-Tt-dbh" secondAttribute="height" multiplier="1:1" id="1Uk-yD-6Zl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tattoo Studio Barber Shop" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFF-ur-Nsg">
+                                <rect key="frame" x="86.5" y="44.5" width="183.5" height="22"/>
+                                <fontDescription key="fontDescription" name="Jost-Medium" family="Jost" pointSize="15"/>
+                                <color key="textColor" red="0.015686274510000001" green="0.22352941179999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services : New Hair Cut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRf-3s-Dvd">
+                                <rect key="frame" x="86.5" y="70" width="183.5" height="19"/>
+                                <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="13"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.12549019610000001" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="6/21/2021 - 11:30 - 12:30pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78H-8x-4gY">
+                                <rect key="frame" x="86.5" y="22" width="116.5" height="16"/>
+                                <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="11"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kft-co-RR2">
+                                <rect key="frame" x="203" y="17.5" width="67" height="25"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="KH6-U2-9Pb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Jost-Medium" family="Jost" pointSize="10"/>
+                                <state key="normal" title="   Completed   ">
+                                    <color key="titleColor" red="0.86274509799999999" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.97254901959999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="78H-8x-4gY" firstAttribute="leading" secondItem="TFF-ur-Nsg" secondAttribute="leading" id="3dX-Lq-eH9"/>
+                            <constraint firstItem="78H-8x-4gY" firstAttribute="top" secondItem="7Ql-Tt-dbh" secondAttribute="top" id="4Oj-P7-1FE"/>
+                            <constraint firstItem="TFF-ur-Nsg" firstAttribute="centerY" secondItem="7Ql-Tt-dbh" secondAttribute="centerY" id="8cT-8c-8HD"/>
+                            <constraint firstItem="7Ql-Tt-dbh" firstAttribute="leading" secondItem="1fn-h5-XNw" secondAttribute="leading" constant="10" id="8vo-DC-D09"/>
+                            <constraint firstItem="7Ql-Tt-dbh" firstAttribute="height" secondItem="1fn-h5-XNw" secondAttribute="height" multiplier="0.6" id="AJV-ec-4hw"/>
+                            <constraint firstAttribute="trailing" secondItem="TFF-ur-Nsg" secondAttribute="trailing" constant="10" id="ENf-wq-kES"/>
+                            <constraint firstItem="GRf-3s-Dvd" firstAttribute="bottom" secondItem="7Ql-Tt-dbh" secondAttribute="bottom" id="PlA-vW-oVK"/>
+                            <constraint firstItem="GRf-3s-Dvd" firstAttribute="trailing" secondItem="TFF-ur-Nsg" secondAttribute="trailing" id="Vme-xx-OmV"/>
+                            <constraint firstAttribute="trailing" secondItem="Kft-co-RR2" secondAttribute="trailing" constant="10" id="WOQ-ax-NpG"/>
+                            <constraint firstItem="Kft-co-RR2" firstAttribute="centerY" secondItem="78H-8x-4gY" secondAttribute="centerY" id="aJz-vm-TO7"/>
+                            <constraint firstItem="TFF-ur-Nsg" firstAttribute="leading" secondItem="7Ql-Tt-dbh" secondAttribute="trailing" constant="10" id="gcM-z0-zP5"/>
+                            <constraint firstItem="Kft-co-RR2" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="78H-8x-4gY" secondAttribute="trailing" id="goF-n7-ceC"/>
+                            <constraint firstItem="7Ql-Tt-dbh" firstAttribute="centerY" secondItem="1fn-h5-XNw" secondAttribute="centerY" id="mci-aN-CUR"/>
+                            <constraint firstItem="GRf-3s-Dvd" firstAttribute="leading" secondItem="TFF-ur-Nsg" secondAttribute="leading" id="qP6-el-h8N"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="1fn-h5-XNw" secondAttribute="bottom" constant="10" id="GkS-T2-JQj"/>
+                    <constraint firstItem="1fn-h5-XNw" firstAttribute="top" secondItem="n6u-uI-xp0" secondAttribute="top" constant="10" id="Ywy-no-Zwk"/>
+                    <constraint firstAttribute="trailing" secondItem="1fn-h5-XNw" secondAttribute="trailing" constant="20" id="b3A-Hv-EBK"/>
+                    <constraint firstItem="1fn-h5-XNw" firstAttribute="leading" secondItem="n6u-uI-xp0" secondAttribute="leading" constant="20" id="gfH-nv-LpF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="3Uu-Zn-5T3"/>
+            <connections>
+                <outlet property="bgView" destination="1fn-h5-XNw" id="WXJ-vS-CnP"/>
+                <outlet property="dateTime" destination="78H-8x-4gY" id="XCU-YJ-P0N"/>
+                <outlet property="serviceName" destination="GRf-3s-Dvd" id="Lik-YD-P4R"/>
+                <outlet property="shopImage" destination="7Ql-Tt-dbh" id="Xbr-TO-5UM"/>
+                <outlet property="shopName" destination="TFF-ur-Nsg" id="zUA-1s-0yh"/>
+                <outlet property="statusBtn" destination="Kft-co-RR2" id="Vuj-HQ-oEW"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="106.80803571428571"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ShopImage" width="80" height="80"/>
+    </resources>
+</document>

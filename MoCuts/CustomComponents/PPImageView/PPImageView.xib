@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PPImageView" customModule="PetPlanner" customModuleProvider="target">
+            <connections>
+                <outlet property="circleView" destination="6kB-YJ-cU3" id="frs-8X-eC1"/>
+                <outlet property="mainView" destination="QPH-Em-lQT" id="VMc-sd-6Up"/>
+                <outlet property="profileImage" destination="BY0-MR-29B" id="Juk-KV-XRi"/>
+                <outlet property="smallImage" destination="XEI-I3-AC1" id="Gi9-mi-Rpc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="ou0-ML-zDM">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QPH-Em-lQT" customClass="PPCircleView" customModule="PetPlanner" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="113" height="115"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-img" translatesAutoresizingMaskIntoConstraints="NO" id="BY0-MR-29B" customClass="PPCircleImageView" customModule="PetPlanner" customModuleProvider="target">
+                            <rect key="frame" x="6" y="6" width="101" height="103"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6kB-YJ-cU3" customClass="PPCircleView" customModule="PetPlanner" customModuleProvider="target">
+                            <rect key="frame" x="72.5" y="6" width="34.5" height="34.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NbM-hZ-Jpb">
+                                    <rect key="frame" x="8" y="7" width="10" height="11"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="white-camera" translatesAutoresizingMaskIntoConstraints="NO" id="XEI-I3-AC1">
+                                    <rect key="frame" x="8" y="8" width="18.5" height="18.5"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.1960784314" green="0.92156862750000001" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="XEI-I3-AC1" secondAttribute="trailing" constant="8" id="0QA-fV-b2v"/>
+                                <constraint firstItem="XEI-I3-AC1" firstAttribute="leading" secondItem="6kB-YJ-cU3" secondAttribute="leading" constant="8" id="XEl-9m-uWJ"/>
+                                <constraint firstAttribute="width" secondItem="6kB-YJ-cU3" secondAttribute="height" multiplier="1:1" id="bjo-rC-yIe"/>
+                                <constraint firstItem="XEI-I3-AC1" firstAttribute="top" secondItem="6kB-YJ-cU3" secondAttribute="top" constant="8" id="gMo-Fy-14s"/>
+                                <constraint firstAttribute="bottom" secondItem="XEI-I3-AC1" secondAttribute="bottom" constant="8" id="puQ-U7-2Ij"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTQ-6G-655">
+                            <rect key="frame" x="0.0" y="0.0" width="113" height="115"/>
+                            <connections>
+                                <action selector="profileButtonTapped:" destination="-1" eventType="touchUpInside" id="r37-T0-six"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6kB-YJ-cU3" firstAttribute="height" secondItem="QPH-Em-lQT" secondAttribute="height" multiplier="0.3" id="9En-Pg-e85"/>
+                        <constraint firstItem="6kB-YJ-cU3" firstAttribute="trailing" secondItem="BY0-MR-29B" secondAttribute="trailing" id="OeK-q2-Nqv"/>
+                        <constraint firstAttribute="bottom" secondItem="BY0-MR-29B" secondAttribute="bottom" constant="6" id="Uhc-h8-lF5"/>
+                        <constraint firstAttribute="trailing" secondItem="sTQ-6G-655" secondAttribute="trailing" id="Wze-Kq-s8f"/>
+                        <constraint firstItem="sTQ-6G-655" firstAttribute="leading" secondItem="QPH-Em-lQT" secondAttribute="leading" id="aA4-A7-RAM"/>
+                        <constraint firstItem="sTQ-6G-655" firstAttribute="top" secondItem="QPH-Em-lQT" secondAttribute="top" id="mDd-Ko-JS7"/>
+                        <constraint firstAttribute="bottom" secondItem="sTQ-6G-655" secondAttribute="bottom" id="pgE-8k-5Go"/>
+                        <constraint firstItem="BY0-MR-29B" firstAttribute="leading" secondItem="QPH-Em-lQT" secondAttribute="leading" constant="6" id="t1x-UG-WkD"/>
+                        <constraint firstItem="6kB-YJ-cU3" firstAttribute="top" secondItem="BY0-MR-29B" secondAttribute="top" id="wd9-qD-rdq"/>
+                        <constraint firstItem="BY0-MR-29B" firstAttribute="top" secondItem="QPH-Em-lQT" secondAttribute="top" constant="6" id="xeQ-Pc-7tC"/>
+                        <constraint firstAttribute="trailing" secondItem="BY0-MR-29B" secondAttribute="trailing" constant="6" id="y7Y-db-Ks0"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="M24-Tf-Gkc"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="QPH-Em-lQT" firstAttribute="leading" secondItem="ou0-ML-zDM" secondAttribute="leading" id="9Zi-pe-cMT"/>
+                <constraint firstAttribute="trailing" secondItem="QPH-Em-lQT" secondAttribute="trailing" id="Plu-sf-iUF"/>
+                <constraint firstAttribute="bottom" secondItem="QPH-Em-lQT" secondAttribute="bottom" id="e7N-eH-fEk"/>
+                <constraint firstItem="QPH-Em-lQT" firstAttribute="top" secondItem="ou0-ML-zDM" secondAttribute="top" id="jzX-AY-XNb"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="1A5-GM-aoI"/>
+            <point key="canvasLocation" x="-312.31884057971018" y="-327.12053571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="user-img" width="819" height="819"/>
+        <image name="white-camera" width="22.5" height="19"/>
+    </resources>
+</document>

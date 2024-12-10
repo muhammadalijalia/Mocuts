@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppFieldView" customModule="MoCuts" customModuleProvider="target">
+            <connections>
+                <outlet property="animatablePlaceholderLbl" destination="XOM-7E-J6N" id="bzg-lN-OqQ"/>
+                <outlet property="bgView" destination="GAf-St-k9X" id="ME3-bW-bzc"/>
+                <outlet property="bottomConstraintOfErrorLbl" destination="dKK-Tf-bMn" id="WEX-FZ-LME"/>
+                <outlet property="buttonOnTextField" destination="Jmk-Ez-h2d" id="rfF-hc-9ew"/>
+                <outlet property="errorLbl" destination="H1Z-SQ-Yjw" id="4MU-Zt-PIe"/>
+                <outlet property="mainView" destination="e4w-57-E00" id="eIA-yd-mIn"/>
+                <outlet property="rightIconBtn" destination="gek-ki-tjm" id="Geg-94-BGF"/>
+                <outlet property="rightIconImageCustom" destination="0Q7-bv-gX6" id="dPC-cM-7Jm"/>
+                <outlet property="textField" destination="FaC-Ne-pyl" id="OVU-7y-Hkh"/>
+                <outlet property="titleHeight" destination="hF5-Cq-3hM" id="R77-Wb-ryL"/>
+                <outlet property="titleLbl" destination="xS6-7c-gHX" id="Ypz-7t-P3G"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0r9-Cy-XSj">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GAf-St-k9X">
+                    <rect key="frame" x="0.0" y="21" width="395" height="101"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xS6-7c-gHX" customClass="AppLabel" customModule="MoCuts" customModuleProvider="target">
+                    <rect key="frame" x="5" y="5" width="385" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="hF5-Cq-3hM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4w-57-E00">
+                    <rect key="frame" x="15" y="26" width="377" height="42"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Place Holder" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FaC-Ne-pyl" customClass="AppTextField" customModule="MoCuts" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="32.5" width="322" height="26.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.12941176470588234" green="0.12549019607843137" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmk-Ez-h2d">
+                            <rect key="frame" x="0.0" y="0.0" width="377" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="textFieldTapped:" destination="-1" eventType="touchUpInside" id="cI8-3p-ZXl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gek-ki-tjm">
+                            <rect key="frame" x="327" y="-5" width="50" height="101"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="hJp-zA-0jX"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="rightIconBtn:" destination="-1" eventType="touchUpInside" id="j5i-TU-au2"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Q7-bv-gX6">
+                            <rect key="frame" x="352" y="32.5" width="20" height="26.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="9sw-t9-jHh"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="0Q7-bv-gX6" firstAttribute="top" secondItem="FaC-Ne-pyl" secondAttribute="top" id="0p7-oh-Pgf"/>
+                        <constraint firstAttribute="trailing" secondItem="0Q7-bv-gX6" secondAttribute="trailing" constant="5" id="5IT-FR-coC"/>
+                        <constraint firstItem="Jmk-Ez-h2d" firstAttribute="top" secondItem="e4w-57-E00" secondAttribute="top" id="TUH-M4-fbi"/>
+                        <constraint firstItem="0Q7-bv-gX6" firstAttribute="bottom" secondItem="FaC-Ne-pyl" secondAttribute="bottom" id="Ych-IW-PyO"/>
+                        <constraint firstAttribute="bottom" secondItem="Jmk-Ez-h2d" secondAttribute="bottom" id="ZSX-a5-E9V"/>
+                        <constraint firstAttribute="trailing" secondItem="Jmk-Ez-h2d" secondAttribute="trailing" id="cSy-E4-Bdq"/>
+                        <constraint firstItem="Jmk-Ez-h2d" firstAttribute="leading" secondItem="e4w-57-E00" secondAttribute="leading" id="cbI-0S-UsY"/>
+                        <constraint firstAttribute="trailing" secondItem="gek-ki-tjm" secondAttribute="trailing" id="h7F-6b-kVS"/>
+                        <constraint firstItem="FaC-Ne-pyl" firstAttribute="leading" secondItem="e4w-57-E00" secondAttribute="leading" id="hS9-4g-5QP"/>
+                        <constraint firstItem="gek-ki-tjm" firstAttribute="leading" secondItem="FaC-Ne-pyl" secondAttribute="trailing" constant="5" id="jle-e9-1kb"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOM-7E-J6N" customClass="AppLabel" customModule="MoCuts" customModuleProvider="target">
+                    <rect key="frame" x="15" y="64" width="38.5" height="15.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1Z-SQ-Yjw" customClass="AppLabel" customModule="MoCuts" customModuleProvider="target">
+                    <rect key="frame" x="15" y="121" width="377" height="0.0"/>
+                    <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="10"/>
+                    <color key="textColor" red="0.63921568630000003" green="0.027450980390000001" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fj0-yr-83l">
+                    <rect key="frame" x="15" y="121" width="377" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="GOb-4s-kA5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="2U5-uA-Clp"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="e4w-57-E00" firstAttribute="leading" secondItem="2U5-uA-Clp" secondAttribute="leading" constant="15" id="0hk-zb-PAO"/>
+                <constraint firstItem="GAf-St-k9X" firstAttribute="top" secondItem="xS6-7c-gHX" secondAttribute="bottom" id="4m7-eh-wvc"/>
+                <constraint firstItem="2U5-uA-Clp" firstAttribute="trailing" secondItem="e4w-57-E00" secondAttribute="trailing" constant="3" id="C7m-n4-wJC"/>
+                <constraint firstItem="XOM-7E-J6N" firstAttribute="leading" secondItem="FaC-Ne-pyl" secondAttribute="leading" id="CIc-S1-G3e"/>
+                <constraint firstItem="xS6-7c-gHX" firstAttribute="leading" secondItem="2U5-uA-Clp" secondAttribute="leading" constant="5" id="DCu-fI-UBO"/>
+                <constraint firstItem="H1Z-SQ-Yjw" firstAttribute="trailing" secondItem="e4w-57-E00" secondAttribute="trailing" id="Hye-wr-c08"/>
+                <constraint firstItem="e4w-57-E00" firstAttribute="top" secondItem="xS6-7c-gHX" secondAttribute="bottom" constant="5" id="Iaw-Vn-LXm"/>
+                <constraint firstItem="xS6-7c-gHX" firstAttribute="top" secondItem="0r9-Cy-XSj" secondAttribute="top" constant="5" id="MBO-dx-i9d"/>
+                <constraint firstAttribute="bottom" secondItem="GAf-St-k9X" secondAttribute="bottom" constant="1" id="QQZ-TZ-NgW"/>
+                <constraint firstItem="fj0-yr-83l" firstAttribute="leading" secondItem="Jmk-Ez-h2d" secondAttribute="leading" id="SNF-uj-E7F"/>
+                <constraint firstItem="GAf-St-k9X" firstAttribute="trailing" secondItem="2U5-uA-Clp" secondAttribute="trailing" id="YGV-7X-Gti"/>
+                <constraint firstItem="H1Z-SQ-Yjw" firstAttribute="leading" secondItem="FaC-Ne-pyl" secondAttribute="leading" id="bIp-yy-xwo"/>
+                <constraint firstItem="2U5-uA-Clp" firstAttribute="bottom" secondItem="H1Z-SQ-Yjw" secondAttribute="bottom" constant="2" id="dKK-Tf-bMn"/>
+                <constraint firstItem="GAf-St-k9X" firstAttribute="leading" secondItem="0r9-Cy-XSj" secondAttribute="leading" id="dfN-Jb-2x8"/>
+                <constraint firstItem="XOM-7E-J6N" firstAttribute="centerY" secondItem="GAf-St-k9X" secondAttribute="centerY" id="h5s-yr-rdK"/>
+                <constraint firstItem="fj0-yr-83l" firstAttribute="trailing" secondItem="Jmk-Ez-h2d" secondAttribute="trailing" id="mIw-SK-lRg"/>
+                <constraint firstItem="gek-ki-tjm" firstAttribute="top" secondItem="GAf-St-k9X" secondAttribute="top" id="plT-8R-v07"/>
+                <constraint firstItem="fj0-yr-83l" firstAttribute="bottom" secondItem="GAf-St-k9X" secondAttribute="bottom" id="qwl-g8-gD9"/>
+                <constraint firstItem="FaC-Ne-pyl" firstAttribute="centerY" secondItem="GAf-St-k9X" secondAttribute="centerY" id="tXN-mb-WmG"/>
+                <constraint firstItem="2U5-uA-Clp" firstAttribute="trailing" secondItem="xS6-7c-gHX" secondAttribute="trailing" constant="5" id="wfj-Ry-AVg"/>
+                <constraint firstItem="gek-ki-tjm" firstAttribute="bottom" secondItem="GAf-St-k9X" secondAttribute="bottom" id="zwH-lu-nAz"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="80.799999999999997" y="-273.01349325337333"/>
+        </view>
+    </objects>
+</document>

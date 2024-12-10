@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Medium.ttf">
+            <string>Jost-Medium</string>
+        </array>
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="153" id="KGk-i7-Jjw" customClass="CustomerBarberReviewListCell" customModule="MoCuts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vql-Yr-n1Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfimeImage" translatesAutoresizingMaskIntoConstraints="NO" id="RXT-R2-4bz">
+                                <rect key="frame" x="10" y="10" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="X00-SK-cTo"/>
+                                    <constraint firstAttribute="width" secondItem="RXT-R2-4bz" secondAttribute="height" multiplier="1:1" id="qMh-nm-v95"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nKw-m8-yl8">
+                                <rect key="frame" x="95" y="20" width="215" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Jost-Medium" family="Jost" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="np8-RY-qL8" userLabel="RatingView">
+                                <rect key="frame" x="95" y="42.5" width="39" height="16"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FilledYellowStar" translatesAutoresizingMaskIntoConstraints="NO" id="wza-YG-MMy">
+                                        <rect key="frame" x="5" y="2.5" width="11" height="11"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="11" id="eag-86-xWQ"/>
+                                            <constraint firstAttribute="height" constant="11" id="gT6-wh-Nmj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="4.5" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvX-AN-ode">
+                                        <rect key="frame" x="20" y="2" width="14" height="12"/>
+                                        <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="10"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="RatingBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bvX-AN-ode" firstAttribute="leading" secondItem="wza-YG-MMy" secondAttribute="trailing" constant="4" id="4CE-k4-ghp"/>
+                                    <constraint firstItem="wza-YG-MMy" firstAttribute="centerY" secondItem="np8-RY-qL8" secondAttribute="centerY" id="4eB-hD-w3f"/>
+                                    <constraint firstItem="wza-YG-MMy" firstAttribute="leading" secondItem="np8-RY-qL8" secondAttribute="leading" constant="5" id="CY2-WQ-col"/>
+                                    <constraint firstItem="bvX-AN-ode" firstAttribute="centerY" secondItem="wza-YG-MMy" secondAttribute="centerY" id="CyC-O3-VZv"/>
+                                    <constraint firstAttribute="trailing" secondItem="bvX-AN-ode" secondAttribute="trailing" constant="5" id="XLb-ed-Fm6"/>
+                                    <constraint firstAttribute="height" constant="16" id="vtd-SC-dPf"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TyG-ge-FQK">
+                                <rect key="frame" x="10" y="90" width="300" height="53"/>
+                                <string key="text">This is dummy copy. It is not meant to be read. 
+It has been placed here solely to demonstrate the 
+look and feel of finished, typeset text. He who searches for meaning here will be sorely disappointed.</string>
+                                <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QaB-FE-An8">
+                                <rect key="frame" x="10" y="152" width="300" height="1"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="0.75" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="42n-Bu-oet"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QaB-FE-An8" secondAttribute="trailing" constant="10" id="3VP-se-0EX"/>
+                            <constraint firstItem="TyG-ge-FQK" firstAttribute="top" secondItem="RXT-R2-4bz" secondAttribute="bottom" constant="10" id="6fo-H1-PaJ"/>
+                            <constraint firstItem="nKw-m8-yl8" firstAttribute="leading" secondItem="RXT-R2-4bz" secondAttribute="trailing" constant="15" id="8ga-Dr-fdU"/>
+                            <constraint firstItem="TyG-ge-FQK" firstAttribute="leading" secondItem="vql-Yr-n1Z" secondAttribute="leading" constant="10" id="B18-Hp-SSn"/>
+                            <constraint firstAttribute="trailing" secondItem="TyG-ge-FQK" secondAttribute="trailing" constant="10" id="E6t-GI-9Zf"/>
+                            <constraint firstAttribute="bottom" secondItem="TyG-ge-FQK" secondAttribute="bottom" constant="10" id="LFc-jC-bSw"/>
+                            <constraint firstItem="np8-RY-qL8" firstAttribute="leading" secondItem="RXT-R2-4bz" secondAttribute="trailing" constant="15" id="P4h-BM-S11"/>
+                            <constraint firstItem="RXT-R2-4bz" firstAttribute="leading" secondItem="vql-Yr-n1Z" secondAttribute="leading" constant="10" id="ele-b0-GCX"/>
+                            <constraint firstAttribute="bottom" secondItem="QaB-FE-An8" secondAttribute="bottom" id="g0Z-3O-ZGF"/>
+                            <constraint firstItem="nKw-m8-yl8" firstAttribute="top" secondItem="RXT-R2-4bz" secondAttribute="top" constant="10" id="gCk-Mc-Uhl"/>
+                            <constraint firstItem="RXT-R2-4bz" firstAttribute="top" secondItem="vql-Yr-n1Z" secondAttribute="top" constant="10" id="mLK-Qx-439"/>
+                            <constraint firstItem="np8-RY-qL8" firstAttribute="top" secondItem="nKw-m8-yl8" secondAttribute="bottom" constant="5" id="nUS-a1-tTG"/>
+                            <constraint firstAttribute="trailing" secondItem="nKw-m8-yl8" secondAttribute="trailing" constant="10" id="tl9-n1-rfW"/>
+                            <constraint firstItem="QaB-FE-An8" firstAttribute="leading" secondItem="vql-Yr-n1Z" secondAttribute="leading" constant="10" id="ycs-18-DhN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vql-Yr-n1Z" secondAttribute="bottom" id="K6L-nB-9IY"/>
+                    <constraint firstItem="vql-Yr-n1Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="PM2-OQ-g9s"/>
+                    <constraint firstAttribute="trailing" secondItem="vql-Yr-n1Z" secondAttribute="trailing" id="XLU-9E-Rpp"/>
+                    <constraint firstItem="vql-Yr-n1Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cTj-eM-xK2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="profileImageView" destination="RXT-R2-4bz" id="e96-gB-Wm9"/>
+                <outlet property="rating" destination="bvX-AN-ode" id="oeO-DM-Ajg"/>
+                <outlet property="review" destination="TyG-ge-FQK" id="GK8-nZ-8t2"/>
+                <outlet property="title" destination="nKw-m8-yl8" id="DGm-ox-RqF"/>
+            </connections>
+            <point key="canvasLocation" x="134.78260869565219" y="109.48660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FilledYellowStar" width="23" height="22"/>
+        <image name="ProfimeImage" width="50" height="50"/>
+        <namedColor name="RatingBackgroundColor">
+            <color red="0.94499999284744263" green="0.96899998188018799" blue="0.99599999189376831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

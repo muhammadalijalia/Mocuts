@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="BarberTimeSwitchCell" customModule="MoCuts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-oT-Zrg">
+                        <rect key="frame" x="0.0" y="10" width="320" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:00 am - 11:30 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBx-8v-v1z">
+                                <rect key="frame" x="20" y="6" width="211" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="16"/>
+                                <color key="textColor" red="0.12941176470588234" green="0.12549019607843137" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" preferredStyle="sliding" translatesAutoresizingMaskIntoConstraints="NO" id="aQa-DF-SAr">
+                                <rect key="frame" x="251" y="2" width="51" height="31"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <color key="onTintColor" red="0.84705882352941175" green="0.87058823529411766" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="0.25098039215686274" green="0.55294117647058827" blue="0.47843137254901957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.96862745098039216" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aQa-DF-SAr" firstAttribute="leading" secondItem="QBx-8v-v1z" secondAttribute="trailing" constant="20" id="1EX-8d-t6b"/>
+                            <constraint firstItem="aQa-DF-SAr" firstAttribute="centerY" secondItem="Cbh-oT-Zrg" secondAttribute="centerY" id="ZzY-XI-RJn"/>
+                            <constraint firstItem="QBx-8v-v1z" firstAttribute="centerY" secondItem="Cbh-oT-Zrg" secondAttribute="centerY" id="gyE-Hh-w4h"/>
+                            <constraint firstAttribute="trailing" secondItem="aQa-DF-SAr" secondAttribute="trailing" constant="20" id="mnL-E6-DSy"/>
+                            <constraint firstItem="QBx-8v-v1z" firstAttribute="leading" secondItem="Cbh-oT-Zrg" secondAttribute="leading" constant="20" id="y0g-Mv-r15"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Cbh-oT-Zrg" secondAttribute="trailing" id="8MY-d4-Vgb"/>
+                    <constraint firstItem="Cbh-oT-Zrg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Q9h-Rr-Rhd"/>
+                    <constraint firstItem="Cbh-oT-Zrg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dQh-fp-XNX"/>
+                    <constraint firstAttribute="bottom" secondItem="Cbh-oT-Zrg" secondAttribute="bottom" constant="10" id="pgb-le-2Qq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="Cbh-oT-Zrg" id="LnY-RF-HOp"/>
+                <outlet property="switchOutlet" destination="aQa-DF-SAr" id="dy8-cP-3oc"/>
+                <outlet property="timeText" destination="QBx-8v-v1z" id="RdQ-MW-2Co"/>
+            </connections>
+            <point key="canvasLocation" x="118.84057971014494" y="81.361607142857139"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

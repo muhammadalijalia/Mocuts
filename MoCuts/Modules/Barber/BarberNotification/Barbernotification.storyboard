@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Barber Notification View-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BarberNotificationView" id="Y6W-OH-hqX" customClass="BarberNotificationView" customModule="MoCuts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROy-Uc-Twn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fG0-pt-NsX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <color key="separatorColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="separatorInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="fG0-pt-NsX" firstAttribute="leading" secondItem="ROy-Uc-Twn" secondAttribute="leading" id="9bi-Kq-YdJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="fG0-pt-NsX" secondAttribute="bottom" id="F5K-ZW-cMR"/>
+                                    <constraint firstItem="fG0-pt-NsX" firstAttribute="top" secondItem="ROy-Uc-Twn" secondAttribute="top" id="QQJ-jv-7hi"/>
+                                    <constraint firstAttribute="trailing" secondItem="fG0-pt-NsX" secondAttribute="trailing" id="a90-Bd-abg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ROy-Uc-Twn" secondAttribute="trailing" id="AW7-XJ-3Cr"/>
+                            <constraint firstItem="ROy-Uc-Twn" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="HWi-T6-aWB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="ROy-Uc-Twn" secondAttribute="bottom" id="ehG-mg-9uH"/>
+                            <constraint firstItem="ROy-Uc-Twn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="thC-On-eaU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fG0-pt-NsX" id="Qs7-sH-spB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="58"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 222 222">
+  <defs>
+    <filter id="Oval" x="72.46" y="74.252" width="77.484" height="77.484" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="ic_current" transform="translate(16.712 12.504)">
+    <circle id="Oval-2" data-name="Oval" cx="111" cy="111" r="111" transform="translate(-16.712 -12.504)" fill="rgba(4,57,108,0.12)"/>
+    <g transform="matrix(1, 0, 0, 1, -16.71, -12.5)" filter="url(#Oval)">
+      <path id="Oval-3" data-name="Oval" d="M31.242,0A31.242,31.242,0,1,1,0,31.242,31.242,31.242,0,0,1,31.242,0Z" transform="translate(79.96 79.75)" fill="#04396c" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Jost-Regular.ttf">
+            <string>Jost-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BarberTimeSlotCell" customModule="MoCuts" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="239" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="239" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4NL-8M-Gvj">
+                        <rect key="frame" x="0.0" y="10" width="239" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5d7-A2-rop">
+                                <rect key="frame" x="10" y="6" width="219" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Jost-Regular" family="Jost" pointSize="16"/>
+                                <color key="textColor" red="0.015686274509803921" green="0.22352941176470587" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5d7-A2-rop" firstAttribute="leading" secondItem="4NL-8M-Gvj" secondAttribute="leading" constant="10" id="Ans-qO-cNP"/>
+                            <constraint firstAttribute="trailing" secondItem="5d7-A2-rop" secondAttribute="trailing" constant="10" id="XKi-bb-wH8"/>
+                            <constraint firstItem="5d7-A2-rop" firstAttribute="centerY" secondItem="4NL-8M-Gvj" secondAttribute="centerY" id="rSq-t9-Iwf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4NL-8M-Gvj" secondAttribute="bottom" constant="10" id="6ij-iV-mdc"/>
+                <constraint firstAttribute="trailing" secondItem="4NL-8M-Gvj" secondAttribute="trailing" id="R4G-WB-zg5"/>
+                <constraint firstItem="4NL-8M-Gvj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="hCe-Er-ox5"/>
+                <constraint firstItem="4NL-8M-Gvj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="vRs-Wu-LOB"/>
+            </constraints>
+            <size key="customSize" width="239" height="55"/>
+            <connections>
+                <outlet property="bgView" destination="4NL-8M-Gvj" id="pHH-Yf-7fc"/>
+                <outlet property="bottomConstraint" destination="6ij-iV-mdc" id="3VM-dq-5ry"/>
+                <outlet property="timeSlotLabel" destination="5d7-A2-rop" id="JXo-pc-ab1"/>
+                <outlet property="topConstraint" destination="hCe-Er-ox5" id="nwe-gy-RG3"/>
+            </connections>
+            <point key="canvasLocation" x="163.04347826086959" y="73.995535714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
